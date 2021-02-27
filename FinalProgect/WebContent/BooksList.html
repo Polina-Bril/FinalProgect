@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BooksList</title>
+</head>
+<body>
+	<form method="get" action="BooksServlet">
+		Добавление новой книги:<br> <input type="text" name="nameCreate">Название
+		книги <br> <input type="text" name="genreCreate">Жанр <br>
+		<input type="text" name="authorCreate">Имя автора <br> <input
+			type="submit" value="Добавить">
+	</form>
+	<br>
+	<br>
+	<form method="post" action="BooksServlet">
+		Редактирование книги:<br> <input type="text" name="idUpdate">ID
+		книги <br> <input type="text" name="nameUpdate">Новое
+		название книги <br> <input type="text" name="genreUpdate">Новый
+		жанр <br> <input type="text" name="authorUpdate">Новое
+		имя автора <br> <input type="submit" value="Изменить">
+	</form>
+	<br>
+	<br>
+	<form method="get" action="BooksServlet2">
+		Удаление книги:<br> <input type="text" name="idDelete">ID
+		книги <br> <input type="submit" value="Удалить">
+	</form>
+	<br>
+	<br>
+	<form method="post" action="BooksServlet2">
+		Получение книги по ID:<br> <input type="text" name="idGet">ID
+		книги <br> <input type="submit" value="Получить">
+	</form>
+	<a href="http://localhost:8080/FinalProgect/ListOfBooks">Посмотреть
+		список книг в библиотеке</a>
+
+</body>
+</html>
